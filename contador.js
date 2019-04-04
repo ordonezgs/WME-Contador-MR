@@ -20,7 +20,7 @@
     function startClock() {
         const ProjStatus = 'false' //'true' means raid is in progress, 'false' means the raid hasnt started.
         var PHASE = 'MapRaid Colombia Caribe 2019'
-        var phaseTime = new Date('apr 15, 2019 04:59:59 UTC').getTime();
+        var phaseTime = new Date('apr 08, 2019 04:59:59 UTC').getTime();
         var now = new Date().getTime();
         var time = phaseTime - now;
         var weeks = Math.floor(time / 604800000);
@@ -29,7 +29,7 @@
         var minutes = Math.floor((time % (3600000)) / 60000);
         var seconds = Math.floor((time % (60000)) / 1000);
         var div = [];
-        if (ProjStatus == 'true') {
+        if (ProjStatus == 'true' || ProjStatus == 'false') {
             if (time > 18000001) {
                 div = $('<div>', {id: 'countdown-timer'}).css({marginBottom:'3px', paddingLeft:'2px', textAlign:'center', fontWeight:'600', background: 'lime'});
             }
