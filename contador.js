@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME Contador MR Caribe Co 2019
 // @namespace    MRCol
-// @version      2019.04.03
+// @version      2019.04.03.01
 // @description  Añade un contador para el MR Caribe Co 2019
 // @author       santyg2001
 // @contributor  Dude495
@@ -48,7 +48,7 @@
         $('#user-box').css('padding-bottom','5px');
         if (ProjStatus == 'false') {
             if (time > 604800000) {
-                document.getElementById('countdown-timer').innerHTML = 'El ' + PHASE + ' empieza en ' + weeks + 's ' + days + 'd ' + hours + 'h ' + minutes + 'min ';
+                document.getElementById('countdown-timer').innerHTML = 'El ' + PHASE + ' empieza en ' + weeks + 'sem ' + days + 'd ' + hours + 'h ' + minutes + 'min ';
             }
             else if ((time < 604800000) && (time >= 18000001)) {
                 document.getElementById('countdown-timer').innerHTML = 'El ' + PHASE + ' empieza en ' + days + 'd ' + hours + 'h ' + minutes + 'min ' + seconds + 's ';
@@ -62,7 +62,7 @@
         }
         if (ProjStatus == 'true') {
             if (time > 604800000) {
-                document.getElementById('countdown-timer').innerHTML = 'El ' + PHASE + ' termina en ' + weeks + 'w ' + days + 'd ' + hours + 'h ' + minutes + 'm ';
+                document.getElementById('countdown-timer').innerHTML = 'El ' + PHASE + ' termina en ' + weeks + 'sem ' + days + 'd ' + hours + 'h ' + minutes + 'm ';
             }
             else if ((time < 604800000) && (time >= 18000001)) {
                 document.getElementById('countdown-timer').innerHTML = 'El ' + PHASE + ' termina en ' + days + 'd ' + hours + 'h ' + minutes + 'm ';
