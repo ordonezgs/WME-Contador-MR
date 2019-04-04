@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME Contador MR Caribe Co 2019
 // @namespace    MRCol
-// @version      2019.04.03.03
+// @version      2019.04.03.04
 // @description  Añade un contador para el MR Caribe Co 2019
 // @author       santyg2001
 // @contributor  Dude495
