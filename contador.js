@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME Contador MR Caribe Co 2019
 // @namespace    MRCol
-// @version      2019.04.03.04
+// @version      2019.04.08
 // @description  Añade un contador para el MR Caribe Co 2019
 // @author       santyg2001
 // @contributor  Dude495
@@ -18,9 +18,9 @@
 (function() {
     'use strict';
     function startClock() {
-        const ProjStatus = 'false' //'true' means raid is in progress, 'false' means the raid hasnt started.
+        const ProjStatus = 'true' //'true' means raid is in progress, 'false' means the raid hasnt started.
         var PHASE = 'MapRaid Colombia Caribe 2019'
-        var phaseTime = new Date('apr 08, 2019 04:59:59 UTC').getTime();
+        var phaseTime = new Date('apr 15, 2019 04:59:59 UTC').getTime();
         var now = new Date().getTime();
         var time = phaseTime - now;
         var weeks = Math.floor(time / 604800000);
